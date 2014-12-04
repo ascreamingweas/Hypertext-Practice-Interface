@@ -1,0 +1,15 @@
+String fred, george;
+for (int i = 0; i < 5; i++) {
+	if (i < 3) {
+		fred = "Happy";
+	} else {
+		fred = "Mad";
+	}
+	if (fred == "Happy") {
+		george = "Mad";
+	} else {
+		george = "Happy";
+	}
+}
+System.out.println(fred);
+System.out.println(george);

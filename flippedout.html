@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FlippedOut</title>
+    
+    <script async type="application/dart" src="flippedout.dart"></script>
+    <script async src="packages/browser/dart.js"></script>
+    <link rel="stylesheet" href="flippedout.css">
+  </head>
+  <body>
+    <h1>FlippedOut</h1>
+    <p>Test page</p>
+    
+    <div id="table"></div>
+    <input id="back" type="button" value="Step Back" />
+    <input id="submit" type="button" value="Submit" />
+    <input id="forward" type="button" value="Step Forward" />
+    
+    <div style="clear:both;">
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <h2>Code</h2>
+            </th>
+            <th>
+              <h2>Feedback</h2>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <div id="code" class="textareas" style="width:500px;"></div>
+            </th>
+            <th>
+              <div id="feedback" class="textareas" style="width:200px;"></div>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
