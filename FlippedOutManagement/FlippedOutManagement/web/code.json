@@ -1,0 +1,311 @@
+[
+    {
+        "numVars":2
+    },
+    {
+        "step": 1,
+        "line": 2,
+        "nextline": 3,
+        "variables":[
+            "fred":"null",
+            "george":"null"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Pay attention to where 'fred' is being declared.",
+            "george": "Pay attention to where 'george' is being declared."
+        },
+        "help": {
+            "fred": "The correct answer is: null. Fred has been declared but has not been assigned a value, so it contains the empty value of null.",
+            "george": "The correct answer is: null. George has been declared but has not been assigned a value, so it contains the empty value of null."
+        }
+    },
+    {
+        "step": 2,
+        "line": 3,
+        "nextline": 4,
+        "variables":[
+            "fred":"null",
+            "george":"null"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: null. The variable fred still has not been assigned anything, so it just contains the empty value of null.",
+            "george": "The correct answer is: null. The variable george still has not been assigned anything, so it just contains the empty value of null."
+        }
+    },
+    {
+        "step": 3,
+        "line": 4,
+        "nextline": 8,
+        "variables":[
+            "fred":"null",
+            "george":"null"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "The value for fred will not change until this line is executed.",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: null. The assignment for fred has not been executed yet.",
+            "george": "The correct answer is: null. The variable george still has not been assigned anything, so it just contains the empty value of null."
+        }
+    },
+    {
+        "step": 4,
+        "line": 8,
+        "nextline": 9,
+        "variables":[
+            "fred":"Happy",
+            "george":"null"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Look at what value fred was set to when 'i < 1'.",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This was set on line 4 when it entered the if statement.",
+            "george": "The correct answer is: null. The variable george still has not been assigned anything, so it just contains the empty value of null."
+        }
+    },
+    {
+        "step": 5,
+        "line": 9,
+        "nextline": 2,
+        "variables":[
+            "fred":"Happy",
+            "george":"null"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "The value for fred was assigned on line 4.",
+            "george": "Has george's value changed? This line has not been executed yet."
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This was set on line 4 when it entered the if statement.",
+            "george": "The correct answer is: 'Mad'. This was set on line 9 when it entered the if statement."
+        }
+    },
+    {
+        "step": 6,
+        "line": 2,
+        "nextline": 3,
+        "variables":[
+            "fred":"Happy",
+            "george":"Mad"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "The value for george was assigned on line 9."
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 7,
+        "line": 3,
+        "nextline": 6,
+        "variables":[
+            "fred":"Happy",
+            "george":"Mad"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 8,
+        "line": 6,
+        "nextline": 8,
+        "variables":[
+            "fred":"Happy",
+            "george":"Mad"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This line has not been executed yet.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 9,
+        "line": 8,
+        "nextline": 11,
+        "variables":[
+            "fred":"Mad",
+            "george":"Mad"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed? Remember when this was assigned a new value.",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Mad'. This value was assigned on line 6.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 10,
+        "line": 11,
+        "nextline": 2,
+        "variables":[
+            "fred":"Mad",
+            "george":"Mad"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed? This line has not been executed yet."
+        },
+        "help": {
+            "fred": "The correct answer is: 'Mad'. This value was assigned on line 6.",
+            "george": "The correct answer is: 'Mad'. This line has not been executed yet."
+        }
+    },
+    {
+        "step": 11,
+        "line": 2,
+        "nextline": 3,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Look at where george's value was just changed."
+        },
+        "help": {
+            "fred": "The correct answer is: 'Mad'. This value has not changed.",
+            "george": "The correct answer is: 'Happy'. This value was assigned on line 11."
+        }
+    },
+    {
+        "step": 12,
+        "line": 3,
+        "nextline": 6,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 13,
+        "line": 6,
+        "nextline": 8,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 14,
+        "line": 8,
+        "nextline": 11,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 15,
+        "line": 11,
+        "nextline": 2,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 16,
+        "line": 2,
+        "nextline": 14,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    },
+    {
+        "step": 17,
+        "line": 14,
+        "nextline": 15,
+        "variables":[
+            "fred":"Mad",
+            "george":"Happy"
+        ],
+        "message": "Please type in the next expected line number and the values for fred and george at this step of the program.",
+        "feedback": {
+            "fred": "Has fred's value changed?",
+            "george": "Has george's value changed?"
+        },
+        "help": {
+            "fred": "The correct answer is: 'Happy'. This value has not changed.",
+            "george": "The correct answer is: 'Mad'. This value has not changed."
+        }
+    }
+]

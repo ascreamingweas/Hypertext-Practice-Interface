@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flipped Out Management Site</title>
+        <script src="flippedoutmanagement.js" type="application/javascript"></script>
+    
+        <link rel="stylesheet" href="flippedoutmanagement.css">
+    </head>
+    <body onload="main();">
+        <h1>Flipped Out Management Site</h1>
+        <h2 style="color:gray;">Sample Exercise Information Form</h2>
+        <div id="form-area">   
+            <h2>Upload Code Snippet</h2>
+            <form enctype="multipart/form-data" action="fileUpload.php" method="POST">
+                <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+                Upload txt file: <input name="userfile" type="file" /><br/>
+                <input type="submit" value="Upload" />
+            </form>
+
+            <h2>Enter Message</h2>
+            <div class="subsection">
+                Enter default instruction message below:<br/><textarea id="defaultMessage" rows="4" cols="100"></textarea>
+            </div>
+
+            <h2>Add Variables</h2>
+            <div class="subsection">
+                <hr><div id="variableArea"></div>
+                <input type="button" value="Add Variable" onclick="addVariable();" />&nbsp;<input type="button" value="Clear Variables" onclick="clearVariables();"/>&nbsp;<input type="button" value="Save Variables" onclick="saveVariables();"/>
+            </div>
+
+            <h2>Manage Steps</h2>
+            <div class="subsection">
+                <hr><div id="stepArea"></div>
+                <input type="button" value="Add Step" onclick="addStep();" />&nbsp;<input type="button" value="Clear Steps" onclick="clearSteps();"/>
+            </div>
+        </div>
+        <div id="submit" style="float:right; margin-bottom:15px;">
+            <input type="button" value="Submit" onclick="convertAndSubmit();" />
+        </div>
+    </body>
+</html>
