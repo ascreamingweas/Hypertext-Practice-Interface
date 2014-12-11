@@ -118,16 +118,17 @@ void checkResults(HttpRequest req) {
     for (var i = 1; i <= variableLength; i++) {
       var currentVar = querySelector('#v' + i.toString());
       answers['v' + i.toString()] =  currentVar.value;
-      if (currentVar.value == jsonObject[currentStep]['var'+i.toString()]) {
+      //window.alert(jsonObject[currentStep]['help'][tableHeaders[i-1]]);
+      if (currentVar.value == jsonObject[currentStep]['variables'][tableHeaders[i-1]]) {
         resultsMessage = "Correct. Good Job!" + "<br/><br/>" + jsonObject[currentStep]["message"].toString();
         continue;
       } else {
         if (attemptCount >= 2) {
-          resultsMessage = jsonObject[currentStep]['help']['var'+i.toString()];
+          resultsMessage = jsonObject[currentStep]['help'][tableHeaders[i-1]];
           errorFlag = true;
           break;
         } else {
-          resultsMessage = jsonObject[currentStep]['feedback']['var'+i.toString()];
+          resultsMessage = jsonObject[currentStep]['feedback'][tableHeaders[i-1]];
           attemptCount++;
           errorFlag = true;
           break;
